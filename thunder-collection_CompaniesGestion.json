@@ -1,0 +1,519 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CompaniesGestion",
+    "dateExported": "2024-03-01T17:10:51.500Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "44ae4257-ae9a-4dd5-816c-ceaefaa91d91",
+            "name": "USER",
+            "containerId": "",
+            "created": "2024-02-25T05:57:22.182Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "03e0fdd1-ad4b-4104-93fa-e11ac672fdb9",
+            "name": "COMPANY",
+            "containerId": "",
+            "created": "2024-02-25T05:57:30.248Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "70a29d34-3638-4c08-9a96-67a128d2d914",
+            "name": "CATEGORY",
+            "containerId": "",
+            "created": "2024-02-25T05:57:37.057Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "7ab892ea-87f4-4a2b-83fa-026550502d12",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "70a29d34-3638-4c08-9a96-67a128d2d914",
+            "name": "Create",
+            "url": "/category/save",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-25T05:58:08.113Z",
+            "modified": "2024-02-25T19:11:14.071Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoxOSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwODg4NzMzMSwiZXhwIjoxNzA4ODk4MTMxfQ._2827O_Q1Wnriw6OuIVC1KzzN41_x3iO7W1rrjP3Drc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Pequeña empresa"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Hablamos de una pequeña empresa cuando sus filas tienen entre 11 y 30 trabajadores, y sus ventas van desde los $4 hasta los $100 millones MXN al año."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0dd60054-95f2-4ed5-8fc6-c5b384673425",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "44ae4257-ae9a-4dd5-816c-ceaefaa91d91",
+            "name": "Create",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-25T07:16:56.686Z",
+            "modified": "2024-02-25T17:54:17.665Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "names",
+                        "value": "Denis Sebastián"
+                    },
+                    {
+                        "name": "surnames",
+                        "value": "Abad Santos"
+                    },
+                    {
+                        "name": "username",
+                        "value": "dabad"
+                    },
+                    {
+                        "name": "email",
+                        "value": "dabad@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f83810e6-cefd-43ff-ba27-f2464e1d7d66",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "44ae4257-ae9a-4dd5-816c-ceaefaa91d91",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-25T08:02:21.075Z",
+            "modified": "2024-02-25T19:42:42.636Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "mgonzalez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d58e4a5f-c388-4bb5-9f6a-664cfda1d529",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "44ae4257-ae9a-4dd5-816c-ceaefaa91d91",
+            "name": "Update",
+            "url": "/user/update/65db7df8e4038b6c800af7d6",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-25T16:36:18.897Z",
+            "modified": "2024-02-25T19:44:32.822Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg4OTAxNjIsImV4cCI6MTcwODkwMDk2Mn0.1Jug-yxKXdJTj_XyGoFd1CdFiJhoxdYG1FvtYeilb2s"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "names",
+                        "value": "Manuel Eduardo"
+                    },
+                    {
+                        "name": "surnames",
+                        "value": "González Avalos"
+                    },
+                    {
+                        "name": "username",
+                        "value": "mgonzalez"
+                    },
+                    {
+                        "name": "email",
+                        "value": "mgonzalez@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "439d6bae-d929-4c89-b026-aa5bc6d1082b",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "44ae4257-ae9a-4dd5-816c-ceaefaa91d91",
+            "name": "Delete",
+            "url": "/user/delete/65db7ec9e4038b6c800af7dc",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-25T17:33:54.019Z",
+            "modified": "2024-02-25T19:02:23.166Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoxOSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwODg4NzMzMSwiZXhwIjoxNzA4ODk4MTMxfQ._2827O_Q1Wnriw6OuIVC1KzzN41_x3iO7W1rrjP3Drc"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "44e3fefd-56cd-4331-8fd8-e9b30e8317c9",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "44ae4257-ae9a-4dd5-816c-ceaefaa91d91",
+            "name": "Test",
+            "url": "/user/test",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-25T17:51:49.469Z",
+            "modified": "2024-02-25T18:50:53.924Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2VjOWU0MDM4YjZjODAwYWY3ZGMiLCJuYW1lcyI6IkRlbmlzIFNlYmFzdGnDoW4iLCJzdXJuYW1lcyI6IkFiYWQgU2FudG9zIiwidXNlcm5hbWUiOiJkYWJhZCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwODg4Njg1NSwiZXhwIjoxNzA4ODk3NjU1fQ.ncjF_WxlO9Rr2SygISTE600wmoUKDfxD9ixYLCt-MSU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "id",
+                        "value": "65db7df8e4038b6c800af7d6"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e87aad43-5145-4afa-9bc9-46de9a82d3d0",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "70a29d34-3638-4c08-9a96-67a128d2d914",
+            "name": "Update",
+            "url": "/category/update/65db8d2d3d1161edc347936b",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-25T19:05:27.660Z",
+            "modified": "2024-02-25T19:19:20.663Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoxOSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwODg4ODU0MCwiZXhwIjoxNzA4ODk5MzQwfQ.YmxpdVsQf2UzqnUnU-eUfcHbqglQYV37vu_hjPMqNcE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Microempresa"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Una microempresa tiene menos de 10 trabajadores y sus ventas anuales no superan los $4 millones MXN. La mayoría de los emprendimientos inician en este nivel."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "58991d83-ad0d-46a1-810f-8018c8c98532",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "70a29d34-3638-4c08-9a96-67a128d2d914",
+            "name": "Get",
+            "url": "/category/get",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-02-25T19:19:42.512Z",
+            "modified": "2024-02-25T19:20:03.928Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoxOSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwODg4ODU0MCwiZXhwIjoxNzA4ODk5MzQwfQ.YmxpdVsQf2UzqnUnU-eUfcHbqglQYV37vu_hjPMqNcE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ee65acf1-4751-42ec-a247-29660b23c7cd",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "70a29d34-3638-4c08-9a96-67a128d2d914",
+            "name": "Search",
+            "url": "/category/search",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-02-25T19:20:34.783Z",
+            "modified": "2024-02-25T19:21:19.302Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoxOSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwODg4ODU0MCwiZXhwIjoxNzA4ODk5MzQwfQ.YmxpdVsQf2UzqnUnU-eUfcHbqglQYV37vu_hjPMqNcE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Pequeña empresa"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8026b0ba-1204-4719-a6aa-e902d1f0e66f",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "03e0fdd1-ad4b-4104-93fa-e11ac672fdb9",
+            "name": "Create",
+            "url": "/company/create",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-02-25T20:33:54.922Z",
+            "modified": "2024-02-26T01:07:05.214Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg5MDE3MTksImV4cCI6MTcwODkxMjUxOX0.aovsb3z9__tybXbIqYbaUcVCRWSCqyvCG1b1J8paOeI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Abarrotería Los Juanes"
+                    },
+                    {
+                        "name": "levelimpact",
+                        "value": "low"
+                    },
+                    {
+                        "name": "experienceyears",
+                        "value": "7"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65db8d2d3d1161edc347936b"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b61ddffb-e26f-40f1-885f-ffa6f8164bcd",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "03e0fdd1-ad4b-4104-93fa-e11ac672fdb9",
+            "name": "Update",
+            "url": "/company/update/65dbc1f825f9918ff6b2b343",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-02-25T22:42:54.043Z",
+            "modified": "2024-02-25T22:55:27.327Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg5MDE3MTksImV4cCI6MTcwODkxMjUxOX0.aovsb3z9__tybXbIqYbaUcVCRWSCqyvCG1b1J8paOeI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Panadería El Pancho"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e848e02a-3f26-4ea0-b766-6739ea650bf6",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "03e0fdd1-ad4b-4104-93fa-e11ac672fdb9",
+            "name": "Get",
+            "url": "/company/get",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-02-25T23:02:00.735Z",
+            "modified": "2024-02-26T01:10:20.062Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg5MDE3MTksImV4cCI6MTcwODkxMjUxOX0.aovsb3z9__tybXbIqYbaUcVCRWSCqyvCG1b1J8paOeI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c03e11b7-e61d-4e06-8196-266057b66486",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "03e0fdd1-ad4b-4104-93fa-e11ac672fdb9",
+            "name": "SearchWithYears",
+            "url": "/company/searchWithYears",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2024-02-25T23:09:37.270Z",
+            "modified": "2024-02-25T23:47:01.445Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg5MDE3MTksImV4cCI6MTcwODkxMjUxOX0.aovsb3z9__tybXbIqYbaUcVCRWSCqyvCG1b1J8paOeI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "experienceyears",
+                        "value": "5 years"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "27c5166e-44eb-414d-9659-9c2a24f76ed9",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "03e0fdd1-ad4b-4104-93fa-e11ac672fdb9",
+            "name": "SearchWithCategory",
+            "url": "/company/searchWithCategory",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-02-25T23:46:10.756Z",
+            "modified": "2024-02-25T23:49:21.141Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg5MDE3MTksImV4cCI6MTcwODkxMjUxOX0.aovsb3z9__tybXbIqYbaUcVCRWSCqyvCG1b1J8paOeI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "categoryId",
+                        "value": "65db8d2d3d1161edc347936b"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "596ec197-c6db-44b0-96c7-7b19de335771",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "03e0fdd1-ad4b-4104-93fa-e11ac672fdb9",
+            "name": "OrderA-Z",
+            "url": "/company/orderA-Z",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-02-26T00:03:48.470Z",
+            "modified": "2024-02-27T19:37:05.732Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDkwNjI2MTEsImV4cCI6MTcwOTA3MzQxMX0.EiGGZ-U3n6Mp8202EuPh74d-xYMQ6g2AgG8gSw6Ky6o"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "914ef135-b22c-4cfb-bd82-d42dcc7f4a98",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "03e0fdd1-ad4b-4104-93fa-e11ac672fdb9",
+            "name": "OrderZ-A",
+            "url": "/company/orderZ-A",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-02-26T01:00:11.618Z",
+            "modified": "2024-02-27T19:52:43.644Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDkwNjI2MTEsImV4cCI6MTcwOTA3MzQxMX0.EiGGZ-U3n6Mp8202EuPh74d-xYMQ6g2AgG8gSw6Ky6o"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "506ae6fb-1102-40b1-a620-e649eaa6cf2e",
+            "colId": "63712540-114b-45b5-bc8b-dddb4b808908",
+            "containerId": "03e0fdd1-ad4b-4104-93fa-e11ac672fdb9",
+            "name": "Report",
+            "url": "/company/report",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-02-27T21:44:52.849Z",
+            "modified": "2024-02-27T21:46:05.142Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiN2RmOGU0MDM4YjZjODAwYWY3ZDYiLCJuYW1lcyI6Ik1hbnVlbCBFZHVhcmRvIiwic3VybmFtZXMiOiJHb256w6FsZXogQXZhbG9zIiwidXNlcm5hbWUiOiJtZ29uemFsZXoiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDkwNjI2MTEsImV4cCI6MTcwOTA3MzQxMX0.EiGGZ-U3n6Mp8202EuPh74d-xYMQ6g2AgG8gSw6Ky6o"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
